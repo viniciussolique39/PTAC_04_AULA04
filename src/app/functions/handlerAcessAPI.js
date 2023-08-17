@@ -28,7 +28,7 @@ const Usuario=[
 ];
 
 const getUserAuthenticated = (user) => {
- Usuario.map(user => user.name === name, user.email === email && user.password === password, user.token === token);
+Usuario.map(user => user.name === name, user.email === email && user.password === password, user.token === token);
  return  (name, email, password, token)
 }
 
