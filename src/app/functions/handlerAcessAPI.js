@@ -1,6 +1,7 @@
 'use server'
 
-const Usuario=[
+
+const usuario=[
     {
 
     name: "Vinicius de Souza Solique",
@@ -28,13 +29,11 @@ const Usuario=[
 ];
 
 const getUserAuthenticated = (user) => {
-Usuario.map(user => user.name === name, user.email === email && user.password === password, user.token === token);
- return  (name, email, password, token)
+    return usuario.map(u => u.email === user.email && u.password === user.password);
+
 }
 
 const getUsers = () =>{
-        return (
-            name, email, password, token
-        )
+ return usuario
 }
 export { getUsers, getUserAuthenticated };
